@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="media/icon/icons/all.css">
   <title>My blog</title>
 </head>
-<body>    
+
+<body>
   <header class="hero">
     <div class="container">
-      <div class="hero-header">        
-        <img src="media/img/logo.svg" alt="logo" class="logo">        
-        <div class="social-links">          
+      <div class="hero-header">
+        <img src="media/img/logo.svg" alt="logo" class="logo">
+        <div class="social-links">
           <a href="#" class="social-link"><i class="fab fa-vk"></i></a>
           <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
           <a href="#" class="social-link"><i class="fab fa-github"></i></a>
@@ -23,34 +26,111 @@
       </div>
       <!-- /.hero-header -->
       <div class="hero-contant">
+        <div class="hero-avatar"></div>
+        <!-- /.hero-avatar -->
         <div class="hero-text">
           <span class="hero-subtitle">Web Developer</span>
           <h1 class="hero-title">Nikita Galchenko</h1>
-          <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus non veniam alias vero assumenda, debitis voluptatibus laboriosam dignissimos labore qui voluptates distinctio eum quas laborum dicta provident sed hic corporis.</p>
-          
+          <p class="hero-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus non veniam
+            alias vero assumenda, debitis voluptatibus laboriosam dignissimos labore qui voluptates distinctio eum quas
+            laborum dicta provident sed hic corporis.</p>
         </div>
         <!-- /.hero-text -->
-        <div class="hero-avatar">
-
-        </div>
-        <!-- /.hero-avatar -->
       </div>
       <!-- /.hero-contant -->
     </div>
   </header>
-  
-<section class="section">
-  <div class="main">
-      <div class="main-card">
-
+  <section>
+    <div class="container">
+      <div class="cards">
+        <div class="card">
+          <div class="percent" >
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_1" cx="70" cy="70" r="70">
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;88" dur="0.5s"></animate>
+              </circle>
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_1">80</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">HTML</h2>
+        </div>
+        <div class="card">
+          <div class="percent" >
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_2" cx="70" cy="70" r="70">
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;176" dur="0.5s"></animate>
+              </circle>
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_2">60</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">CSS/SCSS</h2>
+        </div>
+        <div class="card">
+          <div class="percent" >
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_3" cx="70" cy="70" r="70">
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;198" dur="0.5s"></animate>
+              </circle>
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_3">55</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">JavaScript</h2>
+        </div>
+        <div class="card">
+          <div class="percent" >
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_4" cx="70" cy="70" r="70"><
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;440" dur="0.5s"></animate>/circle>
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_4">0</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">React</h2>
+        </div>
+        <div class="card">
+          <div class="percent" >
+            <svg >            
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_5" cx="70" cy="70" r="70">
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;440" dur="0.5s"></animate>
+              </circle>             
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_5">0</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">NodeJS</h2>
+        </div>
+        <div class="card">
+          <div class="percent" >
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle class ='circle' id="circle_6" cx="70" cy="70" r="70">
+                <animate id="an1" attributeName="stroke-dashoffset" begin="0" values="440;440" dur="0.5s"></animate>
+              </circle>
+            </svg>
+            <div class="number">
+              <h2 class='percent-value' id="circle_6">0</h2><span>%</span>
+            </div>
+          </div>
+          <h2 class="text">SomeText</h2>
+        </div>
       </div>
-    
-      <div class="main_text">
-
-      </div>
-  </div>
-</section>
-<script src="scripts/index.js"></script>  
-<footer></footer>  
+    </div>
+  </section>
+  <footer></footer>
 </body>
+<script src="scripts/index.js"></script>
+
 </html>
